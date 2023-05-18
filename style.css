@@ -1,0 +1,27 @@
+body{
+    background-color: #23272A;
+    color: whitesmoke;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Cambria;
+}
+
+img{
+    max-width: 200px;
+    border-style: dashed;
+    border-color: #58f29d5e;
+    border-radius: 100%;
+    border-width: 5px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+}
+section{
+    background-color: #58f29d5e;
+    border-radius: 10px;
+    max-width: 250px;
+    margin: auto;
+    padding: 10px;
+}
