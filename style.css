@@ -1,11 +1,11 @@
 body{
     background-color: #23272A;
     color: whitesmoke;
-    margin-top: 20px;
     text-align: center;
     font-family: Cambria;
+    margin: 0%;
+    padding: 0%;
 }
-
 img{
     max-width: 200px;
     border-style: dashed;
@@ -27,4 +27,14 @@ section{
 }
 footer{
     font-size: 15px;
+}
+.NavBar{
+    word-spacing: 500px;
+    max-width: 1300px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #58f29d5e;
+    border: 2px solid #58f29d29;
+    font-family: Cambria;
 }
