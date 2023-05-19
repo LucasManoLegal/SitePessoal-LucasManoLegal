@@ -7,6 +7,11 @@ body{
     padding: 0%;
     text-align: center;
 }
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+}
 .Motivações{
     display: flex;
     flex-direction: row;
@@ -25,4 +30,20 @@ img{
     border-color: #58f29d5e;
     border-width: 5px;
     border-radius: 10px;
+}
+.NavBar{
+    word-spacing: 300px;
+    max-width: 1300px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #58f29d5e;
+    border: 2px solid #58f29d29;
+    font-family: Cambria;
+}
+#head{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 10px;
 }

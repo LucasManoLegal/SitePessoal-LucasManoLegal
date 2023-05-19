@@ -29,7 +29,7 @@ footer{
     font-size: 15px;
 }
 .NavBar{
-    word-spacing: 500px;
+    word-spacing: 300px;
     max-width: 1300px;
     padding: 15px;
     margin-bottom: 15px;
@@ -37,4 +37,10 @@ footer{
     background-color: #58f29d5e;
     border: 2px solid #58f29d29;
     font-family: Cambria;
+}
+#head{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 10px;
 }
