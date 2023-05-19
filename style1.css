@@ -1,0 +1,84 @@
+html{
+    scroll-behavior: smooth
+}
+body{
+    font-family: Cambria;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: #23272A;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.Motivações{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: #58f29d5e;
+    border-radius: 10px;
+    max-width: 500px;
+    line-height: 20px;
+    margin: auto;
+}
+.Motivações2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    background-color: #58f29d5e;
+    border-radius: 10px;
+    max-width: 950px;
+    line-height: 20px;
+    margin: auto;
+    font-size: 15px;
+}
+img{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 700px;
+    border-style: double;
+    border-color: #58f29d5e;
+    border-width: 5px;
+    border-radius: 10px;
+}
+.seta{
+    max-width: 100px;
+    border-style: dashed;
+    border-color: #58f29d5e;
+    border-radius: 100%;
+    border-width: 5px;
+}
+.NavBar{
+    word-spacing: 300px;
+    max-width: 1300px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #58f29d5e;
+    border: 2px solid #58f29d29;
+    font-family: Cambria;
+    width: 100%;
+}
+#head{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.seta{
+    max-width: 100px;
+    border-style: dashed;
+    border-color: #58f29d5e;
+    border-radius: 100%;
+    border-width: 5px;
+}

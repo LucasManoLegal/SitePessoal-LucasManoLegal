@@ -1,0 +1,79 @@
+html{
+    scroll-behavior: smooth
+}
+body{
+    background-color: #23272A;
+    color: whitesmoke;
+    text-align: center;
+    font-family: Cambria;
+    margin: 0%;
+    padding: 0%;
+}
+img{
+    max-width: 200px;
+    border-style: dashed;
+    border-color: #58f29d5e;
+    border-radius: 100%;
+    border-width: 5px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+}
+section{
+    background-color: #58f29d5e;
+    border-radius: 10px;
+    max-width: 250px;
+    margin: auto;
+    padding: 10px;
+}
+footer{
+    font-size: 15px;
+}
+.NavBar{
+    word-spacing: 300px;
+    max-width: 1300px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #58f29d5e;
+    border: 2px solid #58f29d29;
+    font-family: Cambria;
+    width: 100%;
+}
+.Contatos:hover{
+    font-style: oblique;
+    color: #58f29d5e;
+}
+.Motivações:hover{
+    font-style: oblique;
+    color: #58f29d5e;
+}
+.index:hover{
+    font-style: oblique;
+    color: #58f29d5e;
+}
+#head{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.seta{
+    max-width: 100px;
+    border-style: dashed;
+    border-color: #58f29d5e;
+    border-radius: 100%;
+    border-width: 5px;
+}
+.HardSkills{
+    margin-top: 15px;
+    text-align: justify;
+    margin-left: 15px;
+}
+.SoftSkills{
+    margin-top: 15px;
+    text-align: justify;
+    margin-left: 15px;
+}
