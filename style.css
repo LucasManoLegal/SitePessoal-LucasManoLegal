@@ -37,6 +37,7 @@ footer{
     background-color: #58f29d5e;
     border: 2px solid #58f29d29;
     font-family: Cambria;
+    width: 100%;
 }
 #head{
     text-align: left;
