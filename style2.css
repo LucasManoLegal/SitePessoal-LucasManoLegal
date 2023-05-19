@@ -23,6 +23,7 @@ body{
 }
 .botão:hover{
     background-color: #58f29d5e;
+    transition: 300ms;
 }
 h1{
     text-align: center;
@@ -37,6 +38,18 @@ h1{
     border: 2px solid #58f29d29;
     font-family: Cambria;
     width: 100%;
+}
+.Contatos:hover{
+    font-style: oblique;
+    color: #58f29d5e;
+}
+.Motivações:hover{
+    font-style: oblique;
+    color: #58f29d5e;
+}
+.index:hover{
+    font-style: oblique;
+    color: #58f29d5e;
 }
 a{
     font-size: 20px;
