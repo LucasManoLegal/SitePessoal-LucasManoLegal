@@ -49,7 +49,7 @@ img{
     border-radius: 10px;
 }
 .seta{
-    max-width: 200px;
+    max-width: 100px;
     border-style: dashed;
     border-color: #58f29d5e;
     border-radius: 100%;
@@ -71,4 +71,11 @@ img{
     font-size: 25px;
     margin-top: 25px;
     margin-left: 10px;
+}
+.seta{
+    max-width: 100px;
+    border-style: dashed;
+    border-color: #58f29d5e;
+    border-radius: 100%;
+    border-width: 5px;
 }

@@ -24,3 +24,26 @@ body{
 .botão:hover{
     background-color: #58f29d5e;
 }
+h1{
+    text-align: center;
+}
+.NavBar{
+    word-spacing: 300px;
+    max-width: 1300px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #58f29d5e;
+    border: 2px solid #58f29d29;
+    font-family: Cambria;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#head{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
