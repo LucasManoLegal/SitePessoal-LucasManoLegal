@@ -7,6 +7,10 @@ body{
     padding: 0%;
     text-align: center;
 }
+html{
+    scroll-behavior: smooth;
+
+}
 a{
     text-decoration: none;
     font-size: 20px;
@@ -44,6 +48,13 @@ img{
     border-width: 5px;
     border-radius: 10px;
 }
+.seta{
+    max-width: 200px;
+    border-style: dashed;
+    border-color: #58f29d5e;
+    border-radius: 100%;
+    border-width: 5px;
+}
 .NavBar{
     word-spacing: 300px;
     max-width: 1300px;
@@ -53,6 +64,7 @@ img{
     background-color: #58f29d5e;
     border: 2px solid #58f29d29;
     font-family: Cambria;
+    width: 100%;
 }
 #head{
     text-align: left;

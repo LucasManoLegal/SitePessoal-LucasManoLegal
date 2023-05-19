@@ -1,0 +1,26 @@
+body{
+    background-color: #23272A;
+    color: whitesmoke;
+    font-family: Cambria;
+    margin: 0%;
+    padding: 0%;
+}
+.nome{
+    border-radius: 15px;
+}
+.email{
+    border-radius: 15px;
+}
+.chat{
+    width: 450px;
+    height: 200px;
+    border-radius: 15px;
+}
+.botão{
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+}
+.botão:hover{
+    background-color: #58f29d5e;
+}
