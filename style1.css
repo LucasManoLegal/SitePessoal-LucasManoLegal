@@ -1,0 +1,28 @@
+body{
+    font-family: Cambria;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: #23272A;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+.Motivações{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: #58f29d5e;
+    border-radius: 10px;
+    max-width: 500px;
+    line-height: 40px;
+    margin: auto;
+}
+img{
+    margin-top: 30px;
+    max-width: 700px;
+    border-style: double;
+    border-color: #58f29d5e;
+    border-width: 5px;
+    border-radius: 10px;
+}
