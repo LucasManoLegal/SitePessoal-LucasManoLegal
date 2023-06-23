@@ -11,12 +11,27 @@
     <!-- NavBar-->
     <div id="setacima">
     <p id="head">SitePessoal-LucasManoLegal</p>
-    </div>
-    <div class="NavBar">
-        <div>
-            <a class="Contatos" href="file:///C:/dev/SitePessoal-LucasManoLegal/Contatos.html?Seu+nome=&Seu+e-mail=&chat=&enviar=Enviar">Contatos</a> 
-            <a class="Motivações" href="file:///C:/dev/SitePessoal-LucasManoLegal/motivacoes.html">Motivações</a> 
-            <a class="index" href="file:///C:/dev/SitePessoal-LucasManoLegal/index.html">Home</a></div>
+    <div class="navbar">
+        <div class="subnav">
+            <button class="subnavbtn">Contatos<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#info">Info</a>
+                <a href="file:///C:/dev/SitePessoal-LucasManoLegal/Contatos.html">Mensagem</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Home<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#Hard">HardSkills</a>
+                <a href="#Soft">SoftSkills</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Motivações<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="file:///C:/dev/SitePessoal-LucasManoLegal/motivacoes.html">Sobre</a>
+            </div>
+        </div>
     </div>
         <img src="Img/FotoPerfil.jpg" alt="Minha foto">
         <h1>LucasManoLegal</h1>
@@ -47,7 +62,7 @@
     <div>
     </div>
     <br>
-    <h1>Qualificações (Hard Skills):</h1>
+    <h1 id="Hard">Qualificações (Hard Skills):</h1>
     <div class="HardSkills">
         <li>Curso Excel básico - realizado em 2020</li>
         <br>
@@ -71,7 +86,7 @@
         <br>
         <li>Curso EAD SENAI Lei Geral de Proteção de Dados (LGPD) / realizado em 2023</li>
     </div>
-    <h1>Habilidades Pessoais (Soft Skills):</h1>
+    <h1 id="Soft">Habilidades Pessoais (Soft Skills):</h1>
     <div class="SoftSkills">
         <li>Capacidade de organização, Dinamismo, Atuação em situações de conflito;</li>
         <br>
@@ -90,7 +105,7 @@
         <br>
     </div>
     <div>
-    <a href="#setacima"><img class="seta" src="Img/seta_cima.png" alt="seta para baixo"></a>
+    <a href="#setacima"><img class="seta" src="Img/seta_cima.png" alt="seta para cima"></a>
         <!-- Footer-->
         <hr>
         <footer>
