@@ -64,6 +64,10 @@ a{
     font-size: 25px;
     margin-top: 25px;
     margin-left: 10px;
+    margin-right: 70%;
+    border-color: #58f29d29;
+    border-style: groove;
+    border-spacing: 10px;
 }
 footer{
     font-size: 15px;
