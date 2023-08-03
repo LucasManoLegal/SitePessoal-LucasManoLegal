@@ -1,37 +1,56 @@
-body{
+body {
     background-color: #23272A;
     color: whitesmoke;
     font-family: Cambria;
     margin: 0%;
     padding: 0%;
 }
-fieldset{
+
+fieldset {
     margin: 0px 100px 100px 100px;
 }
-.nome{
+
+h1 {
+    text-align: center;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer {
+    font-size: 15px;
+    text-align: center;
+}
+
+.nome {
     border-radius: 15px;
 }
-.email{
+
+.email {
     border-radius: 15px;
 }
-.chat{
+
+.chat {
     width: 450px;
     height: 200px;
     border-radius: 15px;
 }
-.botão{
+
+.botão {
     border-radius: 15px;
     width: 100px;
     height: 30px;
 }
-.botão:hover{
+
+.botão:hover {
     background-color: #58f29d5e;
     transition: 300ms;
 }
-h1{
-    text-align: center;
-}
-.NavBar{
+
+.NavBar {
     word-spacing: 300px;
     max-width: 1300px;
     padding: 15px;
@@ -42,38 +61,6 @@ h1{
     font-family: Cambria;
     width: 100%;
 }
-.Contatos:hover{
-    font-style: oblique;
-    color: #58f29d5e;
-}
-.Motivações:hover{
-    font-style: oblique;
-    color: #58f29d5e;
-}
-.index:hover{
-    font-style: oblique;
-    color: #58f29d5e;
-}
-a{
-    font-size: 20px;
-    text-decoration: none;
-    color: whitesmoke;
-}
-#head{
-    text-align: left;
-    font-size: 25px;
-    margin-top: 25px;
-    margin-left: 10px;
-    margin-right: 70%;
-    border-color: #58f29d29;
-    border-style: groove;
-    border-spacing: 10px;
-}
-footer{
-    font-size: 15px;
-    text-align: center;
-}
-
 
 .navbar {
     overflow: hidden;
@@ -137,4 +124,12 @@ footer{
 
 .CaixaDeTexto {
     background-color: #58f29d29;
+}
+
+#head {
+    text-align: left;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 70%;
 }
