@@ -13,6 +13,7 @@ body {
 
 img {
     max-width: 200px;
+    max-height: 350px;
     border-style: dashed;
     border-color: #58f29d5e;
     border-radius: 100%;
@@ -118,15 +119,13 @@ footer {
 }
 
 .HardSkills {
-    margin-top: 15px;
+    margin: 50px;
     text-align: justify;
-    margin-left: 15px;
 }
 
 .SoftSkills {
-    margin-top: 15px;
+    margin: 50px;
     text-align: justify;
-    margin-left: 15px;
 }
 
 .seta {
