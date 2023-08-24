@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>(Contatos) Site Pessoal - Lucas Marques</title>
     <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
     </div>
     <!-- NavBar-->
@@ -31,44 +33,29 @@
             </div>
         </div>
     </div>
-    <h1>CONTATOS</h1>
-    <form>
-        <fieldset>
-            <div>
-                <label>Informe seu nome</label>
-                <input class="nome" type="text" name="Seu nome" id="nome" placeholder="seu nome">
-                <label>Email</label>
-                <input class="email" type="email" name="Seu e-mail" id="e-mail" placeholder="seu e-mail">
-            </div>
-            <div>
-                <label>Que tipo de mensagem você deseja enviar?</label>
-                <br>
-                <br>
-                <label>
-                    <input type="radio" name="msg1" value="msg de pedido">Mensagem de pedido
-                </label>
-                <label>
-                    <input type="radio" name="msg1" value="msg de resposta">Mensagem de resposta
-                </label>
-                <label>
-                    <input type="radio" name="msg1" value="msg de reclamação">Mensagem de reclamação
-                </label>
-                <label>
-                    <input type="radio" name="msg1" value="outra msg">Outro (especificar em caixa de texto abaixo).
-                </label>
-                <label>
-                    <br>
-                    <br>
-                    <input type="text" name="chat" placeholder="Digite aqui..." class="chat">
-                </label>
-                <label>
-                    <br>
-                    <br>
-                    <input type="submit" name="enviar" class="botão">
-                </label>
-        </fieldset>
+    <h1 class="Contatos">Contatos</h1>
+    <form class="formulario" method="post">
+        <label class="Título" for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label class="Título" for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label class="Título" for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required><br><br>
+
+        <label class="Título" for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <label class="Título" for="comentarios">Comentários:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
     </form>
-    </div>
     <!-- Footer-->
     <hr>
     <footer>

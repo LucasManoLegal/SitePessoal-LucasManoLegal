@@ -4,7 +4,6 @@ html {
 
 body {
     font-family: Cambria;
-    font-size: 20px;
     color: whitesmoke;
     background-color: #23272A;
     margin: 0%;
@@ -81,7 +80,6 @@ a {
     border-width: 5px;
 }
 
-
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -90,7 +88,6 @@ a {
 
 .navbar a {
     float: left;
-    font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -103,7 +100,7 @@ a {
 }
 
 .subnav .subnavbtn {
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     outline: none;
     color: white;
@@ -134,8 +131,8 @@ a {
 }
 
 .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
+    background-color: #58f29d5e;
+    color: #57b6ff;
 }
 
 .subnav:hover .subnav-content {

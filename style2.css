@@ -6,12 +6,65 @@ body {
     padding: 0%;
 }
 
-fieldset {
-    margin: 0px 100px 100px 100px;
+h1{
+    text-align: center;
 }
 
-h1 {
-    text-align: center;
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #58f29d5e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+    transition: 300ms;
+}
+
+.formulario {
+    background-color: #333;
+}
+.Contatos {
+    font-size: 40px;
+}
+.Título {
+    color: #58f29d5e;
+    font-size: 20px;
 }
 
 a {
@@ -25,43 +78,6 @@ footer {
     text-align: center;
 }
 
-.nome {
-    border-radius: 15px;
-}
-
-.email {
-    border-radius: 15px;
-}
-
-.chat {
-    width: 450px;
-    height: 200px;
-    border-radius: 15px;
-}
-
-.botão {
-    border-radius: 15px;
-    width: 100px;
-    height: 30px;
-}
-
-.botão:hover {
-    background-color: #58f29d5e;
-    transition: 300ms;
-}
-
-.NavBar {
-    word-spacing: 300px;
-    max-width: 1300px;
-    padding: 15px;
-    margin-bottom: 15px;
-    text-align: center;
-    background-color: #58f29d5e;
-    border: 2px solid #58f29d29;
-    font-family: Cambria;
-    width: 100%;
-}
-
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -70,7 +86,6 @@ footer {
 
 .navbar a {
     float: left;
-    font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -83,7 +98,7 @@ footer {
 }
 
 .subnav .subnavbtn {
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     outline: none;
     color: white;
@@ -114,16 +129,12 @@ footer {
 }
 
 .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
+    background-color: #58f29d5e;
+    color: #57b6ff;
 }
 
 .subnav:hover .subnav-content {
     display: block;
-}
-
-.CaixaDeTexto {
-    background-color: #58f29d29;
 }
 
 #head {
