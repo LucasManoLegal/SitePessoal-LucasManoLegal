@@ -12,6 +12,9 @@ body {
     text-align: center;
 }
 
+h1{
+    font-size: 40px;
+}
 img {
     margin-top: 30px;
     margin-bottom: 20px;
