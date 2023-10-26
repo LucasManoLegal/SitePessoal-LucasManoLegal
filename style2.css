@@ -1,13 +1,13 @@
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,81,1) 40%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 81, 1) 40%);
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     margin: 0%;
     padding: 0%;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
@@ -60,9 +60,11 @@ input[type="submit"]:hover {
 .formulario {
     background-color: #333;
 }
+
 .Contatos {
     font-size: 40px;
 }
+
 .Título {
     color: #58f29d5e;
     font-size: 20px;
@@ -79,12 +81,14 @@ footer {
     text-align: center;
 }
 
+/*Seção de estilo APENAS para a navBar*/
 .navbar {
     overflow: hidden;
     background-color: #58f29d5e;
     margin-bottom: 50px;
 }
 
+/*Links para as páginas*/
 .navbar a {
     float: left;
     color: white;
@@ -93,11 +97,13 @@ footer {
     text-decoration: none;
 }
 
+/*Subnav(ABA DE BAIXO)*/
 .subnav {
     float: left;
     overflow: hidden;
 }
 
+/*Botão da subnav*/
 .subnav .subnavbtn {
     font-size: 20px;
     border: none;
@@ -108,6 +114,7 @@ footer {
     margin: 0;
 }
 
+/*Transição dos botões*/
 .navbar a:hover,
 .subnav:hover .subnavbtn {
     background-color: #58f29d5e;

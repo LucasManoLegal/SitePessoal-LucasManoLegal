@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,81,1) 40%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 81, 1) 40%);
     color: whitesmoke;
     text-align: center;
     margin: 0%;
@@ -48,7 +48,7 @@ footer {
     font-size: 15px;
 }
 
-.SobreMim{
+.SobreMim {
     font-size: 40px;
 }
 
@@ -65,9 +65,11 @@ footer {
     margin: 50px;
     text-align: justify;
 }
-.SENAI{
+
+.SENAI {
     list-style-image: url(Img/SENAI-SP.jpg);
 }
+
 .SoftSkills {
     margin: 50px;
     text-align: justify;
@@ -81,12 +83,14 @@ footer {
     border-width: 5px;
 }
 
+/*Seção de estilo APENAS para a navBar*/
 .navbar {
     overflow: hidden;
     background-color: #58f29d5e;
     margin-bottom: 50px;
 }
 
+/*Links para as páginas*/
 .navbar a {
     float: left;
     color: white;
@@ -95,11 +99,13 @@ footer {
     text-decoration: none;
 }
 
+/*Subnav(ABA DE BAIXO)*/
 .subnav {
     float: left;
     overflow: hidden;
 }
 
+/*Botão da subnav*/
 .subnav .subnavbtn {
     font-size: 20px;
     border: none;
@@ -110,6 +116,7 @@ footer {
     margin: 0;
 }
 
+/*Transição dos botões*/
 .navbar a:hover,
 .subnav:hover .subnavbtn {
     background-color: #58f29d5e;
@@ -139,7 +146,7 @@ footer {
     display: block;
 }
 
-.RedesSociais:hover{
+.RedesSociais:hover {
     background-color: #353c41;
     transition: 200ms;
 }

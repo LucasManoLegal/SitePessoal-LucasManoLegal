@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,81,1) 40%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 81, 1) 40%);
     font-family: 'Poppins', sans-serif;
     color: whitesmoke;
     margin: 0%;
@@ -12,9 +12,10 @@ body {
     text-align: center;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
+
 img {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -84,12 +85,14 @@ a {
     border-width: 5px;
 }
 
+/*Seção de estilo APENAS para a navBar*/
 .navbar {
     overflow: hidden;
     background-color: #58f29d5e;
     margin-bottom: 50px;
 }
 
+/*Links para as páginas*/
 .navbar a {
     float: left;
     color: white;
@@ -98,11 +101,13 @@ a {
     text-decoration: none;
 }
 
+/*Subnav(ABA DE BAIXO)*/
 .subnav {
     float: left;
     overflow: hidden;
 }
 
+/*Botão da subnav*/
 .subnav .subnavbtn {
     font-size: 20px;
     border: none;
@@ -113,6 +118,7 @@ a {
     margin: 0;
 }
 
+/*Transição dos botões*/
 .navbar a:hover,
 .subnav:hover .subnavbtn {
     background-color: #58f29d5e;
