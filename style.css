@@ -3,21 +3,31 @@ html {
 }
 
 body {
-    background-color: #23272A;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,81,1) 40%);
     color: whitesmoke;
     text-align: center;
-    font-family: Cambria;
     margin: 0%;
     padding: 0%;
+    font-family: 'Poppins', sans-serif;
 }
 
-img {
+.img1 {
     max-width: 200px;
     max-height: 350px;
     border-style: dashed;
     border-color: #58f29d5e;
     border-radius: 100%;
     border-width: 5px;
+}
+
+.img2 {
+    max-width: 900px;
+    max-height: 800px;
+    border-radius: 15px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #58f29d5e;
 }
 
 a {
@@ -55,7 +65,9 @@ footer {
     margin: 50px;
     text-align: justify;
 }
-
+.SENAI{
+    list-style-image: url(Img/SENAI-SP.jpg);
+}
 .SoftSkills {
     margin: 50px;
     text-align: justify;
@@ -95,7 +107,6 @@ footer {
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit;
     margin: 0;
 }
 
@@ -121,16 +132,14 @@ footer {
 
 .subnav-content a:hover {
     background-color: #58f29d5e;
-    color: #57b6ff;
+    color: #58f29dbd;
 }
 
 .subnav:hover .subnav-content {
     display: block;
 }
-.RedesSociais{
-    font-family: 'Times New Roman';
-}
+
 .RedesSociais:hover{
-    background-color: #23272A;
-    transition: 100ms;
+    background-color: #353c41;
+    transition: 200ms;
 }
