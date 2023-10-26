@@ -27,7 +27,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
+input[type="date"],
 select,
 textarea {
     width: 100%;
@@ -80,7 +80,7 @@ footer {
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #58f29d5e;
     margin-bottom: 50px;
 }
 
