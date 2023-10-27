@@ -155,8 +155,7 @@ footer {
 }
 
 .subnav:hover .subnav-content {
-    display: block;
-}
+    display: block;}
 
 .github:hover {
     background-color: #353c41;
