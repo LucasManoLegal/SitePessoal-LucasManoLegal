@@ -30,6 +30,23 @@ body {
     border-color: #58f29d5e;
 }
 
+.Icones{
+    text-align: right;
+    max-width: 200px;
+    max-height: 300px;
+    float: right;
+}
+
+.ingles{
+    max-width: 200px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px, 0px;
+    border-radius: 25px;
+}
+
 a {
     text-decoration: none;
     font-size: 20px;
@@ -66,10 +83,6 @@ footer {
     text-align: justify;
 }
 
-.SENAI {
-    list-style-image: url(Img/SENAI-SP.jpg);
-}
-
 .SoftSkills {
     margin: 50px;
     text-align: justify;
@@ -85,9 +98,10 @@ footer {
 
 /*Seção de estilo APENAS para a navBar*/
 .navbar {
-    overflow: hidden;
     background-color: #58f29d5e;
     margin-bottom: 50px;
+    padding: 0;
+    margin: 0;
 }
 
 /*Links para as páginas*/
@@ -97,6 +111,7 @@ footer {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
 }
 
 /*Subnav(ABA DE BAIXO)*/
@@ -144,9 +159,19 @@ footer {
 
 .subnav:hover .subnav-content {
     display: block;
+    position: fixed;
 }
 
-.RedesSociais:hover {
+.github:hover {
     background-color: #353c41;
+    transition: 300ms;
+}
+.youtube:hover {
+    background-color: #ff0000;
+    transition: 300ms;
+}
+
+.Site:hover {
+    color: #2fa8ff;
     transition: 200ms;
 }

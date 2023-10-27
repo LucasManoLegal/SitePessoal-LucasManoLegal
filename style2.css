@@ -53,7 +53,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #333;
+    background-color: #4a4949;
     transition: 300ms;
 }
 
@@ -150,4 +150,9 @@ footer {
     margin-top: 25px;
     margin-left: 10px;
     margin-right: 70%;
+}
+
+.Site:hover {
+    color: #2fa8ff;
+    transition: 200ms;
 }

@@ -147,3 +147,8 @@ a {
 .subnav:hover .subnav-content {
     display: block;
 }
+
+.Site:hover {
+    color: #2fa8ff;
+    transition: 200ms;
+}
