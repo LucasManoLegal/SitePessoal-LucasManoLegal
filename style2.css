@@ -1,68 +1,244 @@
-body{
-    background-color: #23272A;
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 81, 1) 40%);
     color: whitesmoke;
-    font-family: Cambria;
+    font-family: 'Poppins', sans-serif;
     margin: 0%;
     padding: 0%;
 }
-.nome{
-    border-radius: 15px;
+
+h1 {
+    text-align: center;
 }
-.email{
-    border-radius: 15px;
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.chat{
-    width: 450px;
-    height: 200px;
-    border-radius: 15px;
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
-.botão{
-    border-radius: 15px;
-    width: 100px;
-    height: 30px;
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-.botão:hover{
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
     background-color: #58f29d5e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4a4949;
     transition: 300ms;
 }
-h1{
-    text-align: center;
+
+.formulario {
+    background-color: #333;
 }
-.NavBar{
-    word-spacing: 300px;
-    max-width: 1300px;
-    padding: 15px;
-    margin-bottom: 15px;
-    text-align: center;
-    background-color: #58f29d5e;
-    border: 2px solid #58f29d29;
-    font-family: Cambria;
-    width: 100%;
+
+#Contatos {
+    font-size: 40px;
 }
-.Contatos:hover{
-    font-style: oblique;
+
+.Título {
     color: #58f29d5e;
+    font-size: 20px;
 }
-.Motivações:hover{
-    font-style: oblique;
-    color: #58f29d5e;
-}
-.index:hover{
-    font-style: oblique;
-    color: #58f29d5e;
-}
-a{
+
+a {
     font-size: 20px;
     text-decoration: none;
     color: whitesmoke;
 }
-#head{
+
+footer {
+    font-size: 15px;
+    text-align: center;
+}
+
+/*Seção de estilo APENAS para a navBar*/
+.navbar {
+    background-color: #227a4a;
+    display: flex;
+    justify-content: left;
+    top: 0;
+    position: sticky;
+    width: 100%;
+}
+
+/*Links para as páginas*/
+.navbar a {
+    float: left;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Subnav(ABA DE BAIXO)*/
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+/*Botão da subnav*/
+.subnavbtn {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.subnavbtn:hover{
+    background-color: #269c5b;
+}
+
+
+/*Transição dos botões*/
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #227a4a;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #269c5b;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+/*NavBar Responsiva*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .subnav {
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .subnavbtn {
+        justify-content: space-around;
+    }
+
+
+    .subnav-content {
+        position: static;
+        display: none;
+        cursor: pointer;
+    }
+
+    .subnav:hover .subnav-content {
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+    }
+}
+
+#head {
     text-align: left;
     font-size: 25px;
     margin-top: 25px;
     margin-left: 10px;
+    margin-right: 70%;
 }
-footer{
-    font-size: 15px;
-    text-align: center;
+
+.Site:hover {
+    color: #2fa8ff;
+    transition: 200ms;
+}
+
+/*Botão texto*/
+.hidden{
+    display: none;
+}
+
+.btn {
+    border-style: none;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background-color: #58f29d5e;
+    border-radius: 10px;
+    max-width: 250px;
+    margin: auto;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color: #353c41;
+    transition: 300ms;
+}
+
+/* Botões redes sociais */
+.Redes {
+    display: flex;
+    justify-content: right;
+}
+
+.Redes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 300ms;
+    border-radius: 50%; /* Faz com que o link tenha um formato circular */
+    padding-right: 20px;
+    padding-top: 15px;
+
 }

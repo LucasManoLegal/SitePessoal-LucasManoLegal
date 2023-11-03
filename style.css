@@ -1,79 +1,309 @@
-html{
+html {
     scroll-behavior: smooth
 }
-body{
-    background-color: #23272A;
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 81, 1) 40%);
     color: whitesmoke;
     text-align: center;
-    font-family: Cambria;
     margin: 0%;
     padding: 0%;
+    font-family: 'Poppins', sans-serif;
 }
-img{
+
+.img1 {
     max-width: 200px;
+    max-height: 350px;
     border-style: dashed;
     border-color: #58f29d5e;
     border-radius: 100%;
     border-width: 5px;
 }
-a{
+
+.img2 {
+    max-width: 700px;
+    max-height: 600px;
+    border-radius: 15px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #58f29d5e;
+}
+
+.ingles{
+    max-width: 200px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px, 0px;
+    border-radius: 25px;
+}
+
+a {
     text-decoration: none;
     font-size: 20px;
     color: whitesmoke;
 }
-section{
+
+section {
     background-color: #58f29d5e;
     border-radius: 10px;
     max-width: 250px;
     margin: auto;
     padding: 10px;
 }
-footer{
+
+footer {
     font-size: 15px;
 }
-.NavBar{
-    word-spacing: 300px;
-    max-width: 1300px;
-    padding: 15px;
-    margin-bottom: 15px;
-    text-align: center;
-    background-color: #58f29d5e;
-    border: 2px solid #58f29d29;
-    font-family: Cambria;
-    width: 100%;
+
+.SobreMim {
+    font-size: 40px;
 }
-.Contatos:hover{
-    font-style: oblique;
-    color: #58f29d5e;
-}
-.Motivações:hover{
-    font-style: oblique;
-    color: #58f29d5e;
-}
-.index:hover{
-    font-style: oblique;
-    color: #58f29d5e;
-}
-#head{
+
+
+#head {
     text-align: left;
     font-size: 25px;
     margin-top: 25px;
     margin-left: 10px;
+    margin-right: 70%;
 }
-.seta{
+
+.HardSkills {
+    margin: 50px;
+    text-align: justify;
+
+}
+
+.SoftSkills {
+    margin: 50px;
+    text-align: justify;
+}
+
+.seta {
     max-width: 100px;
     border-style: dashed;
     border-color: #58f29d5e;
     border-radius: 100%;
     border-width: 5px;
+    transition: transform 0.3s ease;
 }
-.HardSkills{
-    margin-top: 15px;
-    text-align: justify;
-    margin-left: 15px;
+.seta:hover{
+    animation: pulse 1s infinite;
 }
-.SoftSkills{
-    margin-top: 15px;
-    text-align: justify;
-    margin-left: 15px;
+/*Animação da seta*/
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+/*Seção de estilo APENAS para a navBar*/
+.navbar {
+    background-color: #227a4a;
+    display: flex;
+    justify-content: left;
+    top: 0;
+    position: sticky;
+    width: 100%;
+}
+
+/*Links para as páginas*/
+.navbar a {
+    float: left;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Subnav(ABA DE BAIXO)*/
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+/*Botão da subnav*/
+.subnavbtn {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.subnavbtn:hover{
+    background-color: #269c5b;
+}
+
+
+/*Transição dos botões*/
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #227a4a;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #269c5b;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+/*NavBar Responsiva*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .subnav {
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .subnavbtn {
+        justify-content: space-around;
+    }
+
+
+    .subnav-content {
+        position: static;
+        display: none;
+        cursor: pointer;
+    }
+
+    .subnav:hover .subnav-content {
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+    }
+
+    .img2 {
+        max-width: 500px;
+        max-height: 400px;
+    }
+}
+
+.Site:hover {
+    color: #2fa8ff;
+    transition: 200ms;
+}
+
+/*Botões do script js*/
+.hidden{
+    display: none;
+}
+
+.btn {
+    border-style: none;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #58f29d5e;
+    border-radius: 10px;
+    max-width: 250px;
+    margin: auto;
+    padding: 10px;
+    margin: 40px;
+}
+
+.btn:hover{
+    background-color: #353c41;
+    transition: 300ms;
+    animation: pulse 1s infinite;
+}
+  
+/*Animação dos botões mostrar/esconder*/
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+
+/*icones*/
+.excel {
+    list-style-image: url(Img/Icons/excel.png);
+}
+
+.office {
+    list-style-image: url(Img/Icons/office.png);
+}
+
+.en {
+    list-style-image: url(Img/Icons/en.png);
+}
+
+.py {
+    list-style-image: url(Img/Icons/python.png);
+}
+
+.js {
+    list-style-image: url(Img/Icons/js.png);
+}
+
+.id {
+    list-style-image: url(Img/Icons/ideia.png);
+}
+
+.ce {
+    list-style-image: url(Img/Icons/circular-economy.png);
+}
+
+.fg {
+    list-style-image: url(Img/Icons/5g.png);
+}
+
+.security {
+    list-style-image: url(Img/Icons/security.png);
+}
+
+.lgpd {
+    list-style-image: url(Img/Icons/lgpd.png);
+}
+
+.animate__animated.animate__bounceInLeft {
+    position: relative;
+    z-index: -1;
 }

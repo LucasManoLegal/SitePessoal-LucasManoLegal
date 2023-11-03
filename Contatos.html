@@ -1,64 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Motivações = style.css-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>(Contatos) Site Pessoal - Lucas Marques</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/png" href="Img/Icons/vaultboy.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-</div>
-<!-- NavBar-->
-<p id="head">SitePessoal-LucasManoLegal</p>
-<div class="NavBar">
-    <div>
-        <a class="Contatos" href="file:///C:/dev/SitePessoal-LucasManoLegal/Contatos.html?Seu+nome=&Seu+e-mail=&chat=&enviar=Enviar">Contatos</a> 
-        <a class="Motivações" href="file:///C:/dev/SitePessoal-LucasManoLegal/motivacoes.html">Motivações</a> 
-        <a class="index" href="file:///C:/dev/SitePessoal-LucasManoLegal/index.html">Home</a></div>
-</div>
-    <h1>CONTATOS</h1>
-<form>
-    <fieldset>
-        <div>
-            <label>Informe seu nome</label>
-            <input class="nome" type="text" name="Seu nome" id="nome" placeholder="seu nome">
-            <label>Email</label>
-            <input class="email" type="email" name="Seu e-mail" id="e-mail" placeholder="seu e-mail">
+    <!--Header-->
+    <p id="head">SitePessoal-LucasManoLegal</p>
+    <!-- NavBar-->
+    <div class="navbar">
+        <div class="subnav">
+            <button class="subnavbtn">Contatos<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+            </div>
         </div>
-        <div>
-<label>Que tipo de mensagem você deseja enviar?</label>
-    <br>
-    <br>
-    <label>
-        <input type="radio" name="msg1" value="msg de pedido">Mensagem de pedido
-    </label>
-    <label>
-        <input type="radio" name="msg1" value="msg de resposta">Mensagem de resposta
-    </label>
-    <label>
-        <input type="radio" name="msg1" value="msg de reclamação">Mensagem de reclamação
-    </label>
-    <label>
-        <input type="radio" name="msg1" value="outra msg">Outro (especificar em caixa de texto abaixo).
-    </label>
-    <label>
-    <br>
-    <br>
-        <input type="text" name="chat" placeholder="Digite aqui..." class="chat">
-    </label>
-    <label>
-    <br>
-    <br>
-        <input type="submit" name="enviar" class="botão">
-    </label>
-    </fieldset>
-</form>
+        <div class="subnav">
+            <button class="subnavbtn">Home<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="index.html">Sobre mim</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Motivações<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="motivacoes.html">Sobre</a>
+            </div>
+        </div>
     </div>
+            <br>
+    <!--Formulário-->
+    <h1 id="Contatos">Contatos</h1>
+    <form class="formulario" class="animate__animated animate__fadeIn" method="post">
+        <label class="Título" for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label class="Título" for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label class="Título" for="idade">Data de nascimento</label>
+        <input type="date" id="idade" name="idade"><br><br>
+
+        <label class="Título" for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <label class="Título" for="comentarios">Comentários:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <!--Botões de Redes Sociais-->
+<div class="Redes">
+    <section class="github">
+        <a href="https://github.com/LucasManoLegal" target="__blank__">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+        </a>
+    </section>
+    <br>
+    <section class="youtube">
+        <a href="https://youtu.be/dQw4w9WgXcQ?feature=shared" target="__blank__">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+            </svg>
+        </a>
+    </section>
+</div>
     <!-- Footer-->
     <hr>
-        <footer>
-            <p>Developed by <a href="http://github.com/LucasManoLegal">LucasManoLegal</a>. © 2023 All Rights Reserved.</p>
-        </footer>
+    <footer>
+        <p>Developed by <a class="Site" target="_blank" href="http://github.com/LucasManoLegal">LucasManoLegal</a>. ©
+            2023 All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
