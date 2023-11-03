@@ -22,19 +22,12 @@ body {
 }
 
 .img2 {
-    max-width: 900px;
-    max-height: 800px;
+    max-width: 700px;
+    max-height: 600px;
     border-radius: 15px;
     border-style: dashed;
     border-width: 5px;
     border-color: #58f29d5e;
-}
-
-.Icones{
-    text-align: right;
-    max-width: 200px;
-    max-height: 300px;
-    float: right;
 }
 
 .ingles{
@@ -81,6 +74,7 @@ footer {
 .HardSkills {
     margin: 50px;
     text-align: justify;
+
 }
 
 .SoftSkills {
@@ -94,18 +88,39 @@ footer {
     border-color: #58f29d5e;
     border-radius: 100%;
     border-width: 5px;
+    transition: transform 0.3s ease;
 }
-
+.seta:hover{
+    animation: pulse 1s infinite;
+}
+/*Animação da seta*/
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 /*Seção de estilo APENAS para a navBar*/
 .navbar {
-    background-color: #58f29d5e;
-    margin-bottom: 50px;
+    background-color: #227a4a;
+    display: flex;
+    justify-content: left;
+    top: 0;
+    position: sticky;
+    width: 100%;
 }
 
 /*Links para as páginas*/
 .navbar a {
     float: left;
     color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -118,55 +133,177 @@ footer {
 }
 
 /*Botão da subnav*/
-.subnav .subnavbtn {
-    font-size: 20px;
+.subnavbtn {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
     margin: 0;
+    cursor: pointer;
 }
+
+.subnavbtn:hover{
+    background-color: #269c5b;
+}
+
 
 /*Transição dos botões*/
-.navbar a:hover,
-.subnav:hover .subnavbtn {
-    background-color: #58f29d5e;
-}
-
 .subnav-content {
     display: none;
     position: absolute;
     left: 0;
-    background-color: #58f29d5e;
+    background-color: #227a4a;
     width: 100%;
     z-index: 1;
 }
 
 .subnav-content a {
-    float: left;
     color: white;
     text-decoration: none;
 }
 
 .subnav-content a:hover {
-    background-color: #58f29d5e;
-    color: #58f29dbd;
+    background-color: #269c5b;
 }
 
 .subnav:hover .subnav-content {
-    display: block;}
-
-.github:hover {
-    background-color: #353c41;
-    transition: 300ms;
+    display: block;
 }
-.youtube:hover {
-    background-color: #ff0000;
-    transition: 300ms;
+
+/*NavBar Responsiva*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .subnav {
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .subnavbtn {
+        justify-content: space-around;
+    }
+
+
+    .subnav-content {
+        position: static;
+        display: none;
+        cursor: pointer;
+    }
+
+    .subnav:hover .subnav-content {
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+    }
+
+    .img2 {
+        max-width: 500px;
+        max-height: 400px;
+    }
 }
 
 .Site:hover {
     color: #2fa8ff;
     transition: 200ms;
+}
+
+/*Botões do script js*/
+.hidden{
+    display: none;
+}
+
+.btn {
+    border-style: none;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #58f29d5e;
+    border-radius: 10px;
+    max-width: 250px;
+    margin: auto;
+    padding: 10px;
+    margin: 40px;
+}
+
+.btn:hover{
+    background-color: #353c41;
+    transition: 300ms;
+    animation: pulse 1s infinite;
+}
+  
+/*Animação dos botões mostrar/esconder*/
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+
+/*icones*/
+.excel {
+    list-style-image: url(Img/Icons/excel.png);
+}
+
+.office {
+    list-style-image: url(Img/Icons/office.png);
+}
+
+.en {
+    list-style-image: url(Img/Icons/en.png);
+}
+
+.py {
+    list-style-image: url(Img/Icons/python.png);
+}
+
+.js {
+    list-style-image: url(Img/Icons/js.png);
+}
+
+.id {
+    list-style-image: url(Img/Icons/ideia.png);
+}
+
+.ce {
+    list-style-image: url(Img/Icons/circular-economy.png);
+}
+
+.fg {
+    list-style-image: url(Img/Icons/5g.png);
+}
+
+.security {
+    list-style-image: url(Img/Icons/security.png);
+}
+
+.lgpd {
+    list-style-image: url(Img/Icons/lgpd.png);
+}
+
+.animate__animated.animate__bounceInLeft {
+    position: relative;
+    z-index: -1;
 }

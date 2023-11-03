@@ -50,6 +50,8 @@ input[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
 
 input[type="submit"]:hover {
@@ -61,7 +63,7 @@ input[type="submit"]:hover {
     background-color: #333;
 }
 
-.Contatos {
+#Contatos {
     font-size: 40px;
 }
 
@@ -83,15 +85,20 @@ footer {
 
 /*Seção de estilo APENAS para a navBar*/
 .navbar {
-    overflow: hidden;
-    background-color: #58f29d5e;
-    margin-bottom: 50px;
+    background-color: #227a4a;
+    display: flex;
+    justify-content: left;
+    top: 0;
+    position: sticky;
+    width: 100%;
 }
 
 /*Links para as páginas*/
 .navbar a {
     float: left;
     color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -104,44 +111,79 @@ footer {
 }
 
 /*Botão da subnav*/
-.subnav .subnavbtn {
-    font-size: 20px;
+.subnavbtn {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
     margin: 0;
+    cursor: pointer;
 }
+
+.subnavbtn:hover{
+    background-color: #269c5b;
+}
+
 
 /*Transição dos botões*/
-.navbar a:hover,
-.subnav:hover .subnavbtn {
-    background-color: #58f29d5e;
-}
-
 .subnav-content {
     display: none;
     position: absolute;
     left: 0;
-    background-color: #58f29d5e;
+    background-color: #227a4a;
     width: 100%;
     z-index: 1;
 }
 
 .subnav-content a {
-    float: left;
     color: white;
     text-decoration: none;
 }
 
 .subnav-content a:hover {
-    background-color: #58f29d5e;
-    color: #58f29dbd;
+    background-color: #269c5b;
 }
 
 .subnav:hover .subnav-content {
     display: block;
+}
+
+/*NavBar Responsiva*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .subnav {
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .subnavbtn {
+        justify-content: space-around;
+    }
+
+
+    .subnav-content {
+        position: static;
+        display: none;
+        cursor: pointer;
+    }
+
+    .subnav:hover .subnav-content {
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+    }
 }
 
 #head {
@@ -155,4 +197,48 @@ footer {
 .Site:hover {
     color: #2fa8ff;
     transition: 200ms;
+}
+
+/*Botão texto*/
+.hidden{
+    display: none;
+}
+
+.btn {
+    border-style: none;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background-color: #58f29d5e;
+    border-radius: 10px;
+    max-width: 250px;
+    margin: auto;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color: #353c41;
+    transition: 300ms;
+}
+
+/* Botões redes sociais */
+.Redes {
+    display: flex;
+    justify-content: right;
+}
+
+.Redes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 300ms;
+    border-radius: 50%; /* Faz com que o link tenha um formato circular */
+    padding-right: 20px;
+    padding-top: 15px;
+
 }

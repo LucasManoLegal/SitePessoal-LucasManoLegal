@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Motivações = style.css-->
 
 <head>
     <meta charset="UTF-8">
@@ -7,40 +8,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Pessoal - Lucas Marques</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="Img/vaultboy.png">
+    <link rel="icon" type="image/png" href="Img/Icons/vaultboy.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <!--Header-->
     <div id="setacima">
-        <p class="head" id="head">SitePessoal-LucasManoLegal</p>
-        <!-- NavBar-->
-        <div class="navbar">
-            <div class="subnav">
-                <button class="subnavbtn">Contatos<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="Contatos.html">Mensagem</a>
-                </div>
-            </div>
-            <div class="subnav">
-                <button class="subnavbtn">Home<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="#Hard">HardSkills</a>
-                    <a href="#Soft">SoftSkills</a>
-                </div>
-            </div>
-            <div class="subnav">
-                <button class="subnavbtn">Motivações<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="motivacoes.html">Sobre</a>
-                </div>
+        <p id="head" class="animate__animated animate__rubberBand">SitePessoal-LucasManoLegal</p>
+    </div>
+    <!-- NavBar-->
+    <div class="navbar">
+        <div class="subnav">
+            <button class="subnavbtn">Contatos<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="Contatos.html">Mensagem</a>
             </div>
         </div>
-        <!--Sobre Mim LucasManoLegal-->
-        <br>
+        <div class="subnav">
+            <button class="subnavbtn">Home<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#Hard">HardSkills</a>
+                <a href="#Soft">SoftSkills</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Motivações<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="motivacoes.html">Sobre</a>
+            </div>
+        </div>
+    </div>
+    <!--Sobre Mim LucasManoLegal-->
+    <br>
+    <div class="animate__animated animate__bounceInLeft">
         <h1 class="SobreMim">Sobre Mim</h1>
         <img src="Img/FotoPerfil.jpg" alt="Minha foto" class="img1">
         <h1>LucasManoLegal (Desenvolvedor Web em Treinamento)</h1>
@@ -49,67 +56,40 @@
         <p>Tenho um objetivo de me perpetuar na área e me constituir como Designer de jogos</p>
     </div>
     <br>
-    <div>
-        <!--Botõe de Redes Sociais-->
-        <section class="github">
-            <a href="https://github.com/LucasManoLegal" target="__blank__">
-                GitHub
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                    <path
-                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                </svg>
-            </a>
-        </section>
-        <br>
-        <section class="youtube">
-            <a href="https://www.youtube.com/channel/UC7DpblaJTq7A4H2E-WoE6Qw" target="__blank__">
-                Youtube
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                    <path
-                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                </svg>
-            </a>
-        </section>
-    </div>
     <br>
-    <div>
-    </div>
     <br>
-    <!--Imagens de decoração e Hard Skills/Soft Skills-->
-    <img src="Img/fundo-digital-de-codigo-binario-de-estilo-de-matriz-com-numeros-caindo_1017-25336.avif" alt="matrix"
-        class="img2">
+    <!-- Hard Skills/Soft Skills-->
+    <img src="Img/ilustracao-do-conceito-de-programacao_114360-1351.avif" alt="imagem de ilustração" class="img2">
     <h1 id="Hard">Qualificações (Hard Skills):</h1>
+    <button id="toggleButton1" class="btn">Mostrar/Esconder Lista</button>
     <div class="HardSkills">
-        <img class="Icones" src="Img/office.png" alt="Logo do Office">
-        <li>Curso Excel básico - realizado em 2020</li>
+        <li class="excel">Curso Excel básico - realizado em 2020</li>
         <br>
-        <li>Facilidade com o Microsoft Office</li>
+        <li class="office">Facilidade com o Microsoft Office</li>
         <br>
-        <li>Curso Inglês FISK / Tempo Realizado: 2015/2023</li>
-        <br>
-        <li>Inglês Avançado - C1 no simulado MET (Michigan English Test)<br>de acordo com os níveis de proficiência do CEFR<br>
+        <li class="en">Inglês Avançado - C1 no simulado MET (Michigan English Test)<br>de acordo com os níveis de
+            proficiência do
+            CEFR<br>
             (Common European Framework of Reference for Languages)</li>
-        <img class="Icones" src="Img/MET.png" alt="Logo do MET">
         <br>
-        <li>Estruturas básicas de lista e repetição na linguagem Python</li>
+        <li class="py">Estruturas básicas de lista e repetição na linguagem Python</li>
         <br>
-        <li>Básica da lógica de programação</li>
-        <img class="Icones" src="Img/python.png" alt="Logo do Python">
+        <li class="js">Básica da lógica de programação em JavaScript</li>
         <br>
         <div>
-            <li>Curso EAD Competências Socioemocionais / realizado em 2023</li>
+            <li class="id">Curso EAD Competências Socioemocionais / realizado em 2023</li>
             <br>
-            <li>Curso EAD Economia Circular / realizado em 2023</li>
+            <li class="ce">Curso EAD Economia Circular / realizado em 2023</li>
             <br>
-            <li>Curso EAD Desvendando o 5G / realizado em 2023</li>
+            <li class="fg">Curso EAD Desvendando o 5G / realizado em 2023</li>
             <br>
-            <li>Curso EAD Segurança no Trabalho / realizado em 2023</li>
+            <li class="security">Curso EAD Segurança no Trabalho / realizado em 2023</li>
             <br>
-            <li>Curso EAD Lei Geral de Proteção de Dados (LGPD) / realizado em 2023</li>
+            <li class="lgpd">Curso EAD Lei Geral de Proteção de Dados (LGPD) / realizado em 2023</li>
         </div>
     </div>
-    <img src="Img/ilustracao-do-conceito-de-programacao_114360-1351.avif" alt="imagem de ilustração" class="img2">
     <h1 id="Soft">Habilidades Pessoais (Soft Skills):</h1>
+    <button id="toggleButton2" class="btn">Mostrar/Esconder Lista</button>
     <div class="SoftSkills">
         <li>Capacidade de organização, Dinamismo, Atuação em situações de conflito;</li>
         <br>
@@ -123,19 +103,39 @@
         <br>
         <li>Facilidade no idioma inglês.</li>
         <br>
-        <img class="ingles" src="Img/ingles.jpg" alt="Inglês Idioma ilustração">
-        <br>
-        <li>Realizar buscas (pesquisas) na Internet;</li>
-        <br>
         <br>
     </div>
+    <script>
+        // Função para mostrar ou esconder um elemento
+        function toggleVisibility(element) {
+            if (element.style.display === "block" || element.style.display === "") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+
+        // Adicionar ouvintes de evento aos botões
+        var toggleButton1 = document.getElementById("toggleButton1");
+        toggleButton1.addEventListener("click", function () {
+            var list = document.querySelector(".HardSkills");
+            toggleVisibility(list);
+        });
+
+        var toggleButton2 = document.getElementById("toggleButton2");
+        toggleButton2.addEventListener("click", function () {
+            var list = document.querySelector(".SoftSkills");
+            toggleVisibility(list);
+        });
+    </script>
     <div>
         <a href="#setacima"><img class="seta" src="Img/seta_cima.png" alt="seta para cima"></a>
         <!-- Footer-->
         <hr>
         <footer>
-            <p>Developed by <a class="Site" target="_blank" href="http://github.com/LucasManoLegal">LucasManoLegal</a>. © 2023 All Rights Reserved.
-            </p>
+            <p>Developed by <a class="Site" target="_blank" href="http://github.com/LucasManoLegal">LucasManoLegal</a>.
+                © 2023 All Rights
+                Reserved.</p>
         </footer>
     </div>
 </body>
