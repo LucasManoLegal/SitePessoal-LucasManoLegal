@@ -208,8 +208,8 @@ footer {
     }
 
     .img2 {
-        max-width: 500px;
-        max-height: 400px;
+        max-width: 300px;
+        max-height: 200px;
     }
 }
 
@@ -245,19 +245,19 @@ footer {
     transition: 300ms;
     animation: pulse 1s infinite;
 }
-  
+
 /*Animação dos botões mostrar/esconder*/
 @keyframes pulse {
     0% {
-      transform: scale(1);
+    transform: scale(1);
     }
     50% {
-      transform: scale(1.1);
+    transform: scale(1.1);
     }
     100% {
-      transform: scale(1);
+    transform: scale(1);
     }
-  }
+}
 
 
 
